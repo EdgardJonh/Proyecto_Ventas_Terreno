@@ -1,0 +1,58 @@
+.parent {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 1fr 1fr 1fr 0.1fr;
+  grid-template-areas:
+    "div1 div1 div1 div1 div1"
+    "div2 div4 div4 div4 div4"
+    "div2 div4 div4 div4 div4"
+    "div2 div4 div4 div4 div4"
+    "div2 div3 div3 div3 div3";
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+
+}
+
+.div1 {
+  grid-area: div1;
+  background-color: rgb(131, 131, 170);
+}
+.div2 {
+  grid-area: div2;
+  background-color: black;
+  color: white;
+}
+.div3 {
+  grid-area: div3;
+  background-color: cadetblue;
+}
+.div4 {
+
+  grid-area: div4;
+  background-color: cornflowerblue;
+  padding: 2%;
+}
+.contenido_div4 {
+
+}
+.lasCards {
+    
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 3px;
+        grid-row-gap: 3px;
+        
+
+}
+
+
+/* Secciones de Cards */
+.card {
+    width: 100%;
+}
+
+.card img{
+    width: 100%;
+}
+/* ///////////////////////////////////////////////////////// */
